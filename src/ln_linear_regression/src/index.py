@@ -2,7 +2,6 @@
 This module is designed to encapsulate common functionality used
 by data scientist in the context of machine learning with Linear Regression Algorithms
 """
-import uuid
 import numpy as np
 import matplotlib.pyplot as plot
 import statsmodels.api as sm
@@ -11,7 +10,6 @@ from sklearn.model_selection import train_test_split
 from sklearn.metrics import mean_absolute_error
 from sklearn.metrics import r2_score
 from statsmodels.formula.api import ols
-
 
 def split_data(x, y, test_size = 0.30, random_state = 50):
     """split_dataset
@@ -26,17 +24,7 @@ def split_data(x, y, test_size = 0.30, random_state = 50):
     # Break data up into training and test data:
     #
     x_train, x_test, y_train, y_test = train_test_split(x, y, test_size=test_size, random_state=random_state)
-    # 
-    # Reshape into 2 dim array
-    #
-    x_train = np.array(x_train).reshape(-1,1)
-    x_test = np.array(x_test).reshape(-1,1)
-    # 
-    # Reshape into 2 dim array
-    #
-    y_train = np.array(y_train).reshape(-1,1)
-    y_test = np.array(y_test).reshape(-1,1)
-    
+   
     return x_train, x_test, y_train, y_test
    
 def residual_plot(xlabel, ylabel, data):
