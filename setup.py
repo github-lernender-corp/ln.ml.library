@@ -5,7 +5,7 @@ with open("src/Readme.md", "r") as f:
 
 setup(
     name="ln.ml.library",
-    version="1.0.1",
+    version="1.0.0",
     description="Lernender Corp Core Machine Learning Library",
     package_dir={"": "src"},
     packages=find_packages(where="src"),
