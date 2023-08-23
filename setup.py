@@ -11,7 +11,7 @@ setup(
     packages=find_packages(where="src"),
     long_description=long_description,
     long_description_content_type="text/markdown",
-    url="git@github.com:github-lernender-corp/ln.ml.core.git",
+    url="git@github.com:github-lernender-corp/ln.ml.library.git",
     author="Lovelidge, Shawn",
     author_email="slovelidge@lernendercorp.com",
     license="MIT",
