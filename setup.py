@@ -1,11 +1,11 @@
 from setuptools import find_packages, setup
 
-with open("src/Readme.md", "r") as f:
+with open("./Readme.md", "r") as f:
     long_description = f.read()
 
 setup(
     name="ln.ml.library",
-    version="1.0.0",
+    version="1.0.1",
     description="Lernender Corp Core Machine Learning Library",
     package_dir={"": "src"},
     packages=find_packages(where="src"),
